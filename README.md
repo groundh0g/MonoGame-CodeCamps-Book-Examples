@@ -1,4 +1,4 @@
-# [MonoGame-CodeCamps-Book-Examples](https://github.com/groundh0g/MonoGame-CodeCamps-Book-Examples)
+# [MonoGame Book Examples](https://github.com/groundh0g/MonoGame-CodeCamps-Book-Examples)
 
 Examples from my 2016 book, [MonoGame: Code Camps](http://codetopia.com/book/codecamps/).
 
