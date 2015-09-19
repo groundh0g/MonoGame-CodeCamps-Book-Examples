@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{73AB845A-3DF8-4CDB-9989-0A8D41326200}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Codetopia.Xna</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Framework\Input\GamePadCapabilitiesEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Framework\Input\GamePadEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Framework\Input\Touch\TouchPanelCapabilitiesEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Framework\Input\Touch\TouchPanelEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\Particles\Emitter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\Particles\Modifier.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\Particles\Particle.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\Particles\RangedValue.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\PlatformUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Framework\PlayerIndexEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\CollisionUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\Collision\GameSprite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\Collision\IPixelPerfectSprite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Lib\Util\Collision\" />
+  </ItemGroup>
+</Project>
