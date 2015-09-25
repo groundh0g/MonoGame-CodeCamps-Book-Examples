@@ -44,9 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="MonoMac" />
     <Reference Include="MonoGame.Framework">
@@ -58,6 +56,7 @@
     <Reference Include="OpenTK">
       <HintPath>..\packages\MonoGame.Framework.MacOS.3.4.0.459\lib\net45\OpenTK.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -72,9 +71,8 @@
   <Import Project="..\Particles\Particles.projitems" Label="Shared" Condition="Exists('..\Particles\Particles.projitems')" />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <BundleResource Include="Content\images\JoeFly.png" />
-    <BundleResource Include="Content\images\JoeHover.png" />
-    <BundleResource Include="Content\images\JoeKick.png" />
     <BundleResource Include="Content\images\Particle.png" />
+    <BundleResource Include="Content\images\SplashScreen.png" />
+    <BundleResource Include="Content\images\ParticlesTitle.png" />
   </ItemGroup>
 </Project>

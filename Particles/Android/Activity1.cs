@@ -37,7 +37,6 @@ namespace Particles.Droid
 			var g = new Game1();            
 			SetContentView(g.Services.GetService<View>()); // this is new
 			g.Run();
-
 		}
 		
 	}

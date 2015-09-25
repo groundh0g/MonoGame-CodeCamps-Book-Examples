@@ -3,7 +3,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Codetopia.Xna.Lib.Util.Collision
+namespace Codetopia.Xna.Lib.Graphics
 {
 	public interface IPixelPerfectSprite
 	{

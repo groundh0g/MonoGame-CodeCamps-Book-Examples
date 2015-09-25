@@ -2,15 +2,15 @@
 
 using Microsoft.Xna.Framework;
 
-namespace Codetopia.Xna.Lib.Graphics.Particles
+namespace Codetopia.Xna.Lib
 {
 	// simple class to hold min / max values and generate random values 
 	// within those bounds. b ase class uses generics (templates)
 	public abstract class RangedValue<T>
 	{
-		public RangedValue() : this(default(T), default(T)) {}
+		protected RangedValue() : this(default(T), default(T)) {}
 
-		public RangedValue(T min, T max) : base()
+		protected RangedValue(T min, T max) : base()
 		{
 			this.Min = min;
 			this.Max = max;
@@ -25,6 +25,9 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 
 		// generate a random value between min and max, inclusive
 		public abstract T RandomValue();
+
+		// linear interpolation between min and max
+		public abstract T Lerp(float progress);
 	}
 
 	public class RangedByte : RangedValue<byte>
@@ -42,6 +45,12 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 					(float)m_rand.NextDouble()));
 			return Value;
 
+		}
+
+		// linear interpolation between min and max
+		public override byte Lerp(float progress)
+		{
+			return (byte)MathHelper.Lerp (Min, Max, progress);
 		}
 	}
 
@@ -62,6 +71,12 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 			return Value;
 
 		}
+
+		// linear interpolation between min and max
+		public override int Lerp(float progress)
+		{
+			return (int)MathHelper.Lerp (Min, Max, progress);
+		}
 	}
 
 	// type-specific subclass
@@ -79,7 +94,12 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 					(float)Max,
 					(float)m_rand.NextDouble()));
 			return Value;
+		}
 
+		// linear interpolation between min and max
+		public override long Lerp(float progress)
+		{
+			return (long)MathHelper.Lerp (Min, Max, progress);
 		}
 	}
 
@@ -100,6 +120,12 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 			return Value;
 
 		}
+
+		// linear interpolation between min and max
+		public override float Lerp(float progress)
+		{
+			return MathHelper.Lerp (Min, Max, progress);
+		}
 	}
 
 	// type-specific subclass
@@ -118,6 +144,12 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 				(float)m_rand.NextDouble());
 			return Value;
 
+		}
+
+		// linear interpolation between min and max
+		public override double Lerp(float progress)
+		{
+			return MathHelper.Lerp ((float)Min, (float)Max, progress);
 		}
 	}
 
@@ -162,6 +194,15 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 
 			return rv2;
 		}
+
+		// linear interpolation between min and max
+		public override Vector2 Lerp(float progress)
+		{
+			var result = Min;
+			result.X = MathHelper.Lerp (Min.X, Max.X, progress);
+			result.Y = MathHelper.Lerp (Min.Y, Max.Y, progress);
+			return result;
+		}
 	}
 
 	// type-specific subclass
@@ -190,6 +231,16 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 			this.Value = value;
 			return Value;
 
+		}
+
+		// linear interpolation between min and max
+		public override Vector3 Lerp(float progress)
+		{
+			var result = Min;
+			result.X = MathHelper.Lerp (Min.X, Max.X, progress);
+			result.Y = MathHelper.Lerp (Min.Y, Max.Y, progress);
+			result.Z = MathHelper.Lerp (Min.Z, Max.Z, progress);
+			return result;
 		}
 	}
 
@@ -244,6 +295,17 @@ namespace Codetopia.Xna.Lib.Graphics.Particles
 			rv4.Max = v4Max;
 
 			return rv4;
+		}
+
+		// linear interpolation between min and max
+		public override Vector4 Lerp(float progress)
+		{
+			var result = Min;
+			result.X = MathHelper.Lerp (Min.X, Max.X, progress);
+			result.Y = MathHelper.Lerp (Min.Y, Max.Y, progress);
+			result.Z = MathHelper.Lerp (Min.Z, Max.Z, progress);
+			result.W = MathHelper.Lerp (Min.W, Max.W, progress);
+			return result;
 		}
 	}
 }

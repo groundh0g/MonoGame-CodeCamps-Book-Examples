@@ -10,5 +10,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Game1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\MainScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\SplashScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Screens\TitleScreen.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Screens\" />
   </ItemGroup>
 </Project>

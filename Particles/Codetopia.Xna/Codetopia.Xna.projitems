@@ -13,17 +13,19 @@
     <Compile Include="$(MSBuildThisFileDirectory)Framework\Input\GamePadEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Framework\Input\Touch\TouchPanelCapabilitiesEx.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Framework\Input\Touch\TouchPanelEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Framework\PlayerIndexEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\BitmapFont.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\GameScreen.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\GameSprite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\IPixelPerfectSprite.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\Particles\Emitter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\Particles\Modifier.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\Particles\Particle.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\Particles\RangedValue.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\PlatformUtil.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Framework\PlayerIndexEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Graphics\TextureAtlas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\RangedValue.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\CollisionUtil.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\Collision\GameSprite.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\Collision\IPixelPerfectSprite.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Lib\Util\Collision\" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\PlatformUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\ScreenUtil.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Lib\Util\SpriteUtil.cs" />
   </ItemGroup>
 </Project>

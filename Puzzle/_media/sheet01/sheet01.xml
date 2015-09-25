@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with FannyPack Sprite Sheets, v0.2.0 -->
+<!-- https://github.com/groundh0g/FannyPack -->
+
+<!-- Packer: JoeRects, v0.1.0 -->
+<!-- Processed 29 frames in 0.977 seconds. -->
+
+<!-- Exporter (Data): XML, v0.1.0 -->
+<!-- Exporter (Image): PNG, v0.1.0 -->
+<!-- Sat Sep 19 2015 18:05:09 GMT-0400 (EDT) -->
+
+<!--
+  Format:
+    n  = name of sprite
+    x  = sprite x position in texture
+    y  = sprite y position in texture
+    w  = sprite width (may be trimmed)
+    h  = sprite height (may be trimmed)
+    r  = 'y' if sprite is rotated
+    p  = sprite padding (if any)
+    oX = offset x (if trimmed)
+    oY = offset y (if trimmed)
+    oW = original width (if trimmed)
+    oH = original width (if trimmed)
+-->
+<TextureAtlas imagePath="sheet01.png" width="2048" height="2048">
+    <sprite n="zomb01" x="4" y="4" w="256" h="512" />
+    <sprite n="zomb02" x="4" y="520" w="256" h="512" />
+    <sprite n="zomb03" x="4" y="1036" w="256" h="512" />
+    <sprite n="zomb04" x="264" y="4" w="256" h="512" />
+    <sprite n="zomb05" x="264" y="520" w="256" h="512" />
+    <sprite n="zomb07" x="264" y="1036" w="256" h="512" />
+    <sprite n="zomb09" x="524" y="520" w="256" h="512" />
+    <sprite n="zomb11" x="784" y="4" w="256" h="512" />
+    <sprite n="zomb12" x="784" y="520" w="256" h="512" />
+    <sprite n="zomb13" x="784" y="1036" w="256" h="512" />
+    <sprite n="zomb15" x="1304" y="4" w="256" h="512" />
+    <sprite n="zomb16" x="1564" y="4" w="256" h="512" />
+    <sprite n="zomb17" x="1044" y="520" w="256" h="512" />
+    <sprite n="zomb18" x="1044" y="1036" w="256" h="512" />
+    <sprite n="zomb19" x="1304" y="520" w="256" h="512" />
+    <sprite n="zomb20" x="1564" y="520" w="256" h="512" />
+    <sprite n="zomb21" x="1304" y="1036" w="256" h="512" />
+    <sprite n="zomb22" x="1564" y="1036" w="256" h="512" />
+    <sprite n="zomb08" x="524" y="4" w="256" h="512" />
+    <sprite n="zomb10" x="524" y="1036" w="256" h="512" />
+    <sprite n="zomb14" x="1044" y="4" w="256" h="512" />
+    <sprite n="progress" x="4" y="1812" w="256" h="32" />
+    <sprite n="square" x="784" y="1552" w="256" h="256" />
+    <sprite n="earth" x="4" y="1552" w="256" h="256" />
+    <sprite n="fire" x="264" y="1552" w="256" h="256" />
+    <sprite n="health" x="524" y="1552" w="256" h="256" />
+    <sprite n="sun" x="1044" y="1552" w="256" h="256" />
+    <sprite n="water" x="1304" y="1552" w="256" h="256" />
+    <sprite n="wind" x="1564" y="1552" w="256" h="256" />
+</TextureAtlas>

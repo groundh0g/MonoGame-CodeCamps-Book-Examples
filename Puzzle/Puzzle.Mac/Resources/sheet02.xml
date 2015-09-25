@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with FannyPack Sprite Sheets, v0.2.0 -->
+<!-- https://github.com/groundh0g/FannyPack -->
+
+<!-- Packer: JoeRects, v0.1.0 -->
+<!-- Processed 5 frames in 0.489 seconds. -->
+
+<!-- Exporter (Data): XML, v0.1.0 -->
+<!-- Exporter (Image): PNG, v0.1.0 -->
+<!-- Sat Sep 19 2015 18:07:29 GMT-0400 (EDT) -->
+
+<!--
+  Format:
+    n  = name of sprite
+    x  = sprite x position in texture
+    y  = sprite y position in texture
+    w  = sprite width (may be trimmed)
+    h  = sprite height (may be trimmed)
+    r  = 'y' if sprite is rotated
+    p  = sprite padding (if any)
+    oX = offset x (if trimmed)
+    oY = offset y (if trimmed)
+    oW = original width (if trimmed)
+    oH = original width (if trimmed)
+-->
+<TextureAtlas imagePath="sheet02.png" width="1024" height="2048">
+    <sprite n="zomb06" x="0" y="1024" w="256" h="512" />
+    <sprite n="boss01" x="0" y="0" w="512" h="512" />
+    <sprite n="boss04" x="512" y="512" w="512" h="512" />
+    <sprite n="boss02" x="512" y="0" w="512" h="512" />
+    <sprite n="boss03" x="0" y="512" w="512" h="512" />
+</TextureAtlas>

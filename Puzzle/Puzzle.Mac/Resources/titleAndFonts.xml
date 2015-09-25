@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:b01f4dbfeb52b57a26694b90677e9025:b7d9323199635b74ecfc6ca82a68077b:e22fc505cc67c064e828a8265a6f6ab4$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+-->
+<TextureAtlas imagePath="titleAndFonts.png" width="1024" height="1024">
+    <sprite n="Architects Daughter_20.png" x="512" y="768" w="256" h="256"/>
+    <sprite n="Komika Title - Wide_20.png" x="256" y="512" w="256" h="512"/>
+    <sprite n="Komika Title_20.png" x="512" y="512" w="256" h="256"/>
+    <sprite n="Slackey_20.png" x="0" y="512" w="256" h="512"/>
+<!--    <sprite n="title.png" x="0" y="0" w="1024" h="512"/>-->
+</TextureAtlas>
